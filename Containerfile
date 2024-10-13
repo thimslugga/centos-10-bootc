@@ -23,6 +23,6 @@ RUN dnf -y -x ${DNF_EXCLUSIONS} install NetworkManager-wwan
 RUN dnf -y -x ${DNF_EXCLUSIONS} install wget
 RUN dnf -y -x ${DNF_EXCLUSIONS} install wireless-regdb
 RUN dnf -y -x ${DNF_EXCLUSIONS} install wpa_supplicant
-RUN rm -v /usr/lib/systemd/system/local-fs.target.wants/bootc-generic-growpart.service
+RUN rm -v /etc/profile.d/console-login-helper-messages-profile.sh
 RUN systemctl disable sshd.service
 RUN systemctl set-default graphical.target
