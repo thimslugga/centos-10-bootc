@@ -8,6 +8,7 @@ RUN dnf -y -x ${DNF_EXCLUSIONS} install gedit
 RUN dnf -y -x ${DNF_EXCLUSIONS} install git
 RUN dnf -y -x ${DNF_EXCLUSIONS} install gnome-calculator
 RUN dnf -y -x ${DNF_EXCLUSIONS} install gnome-disk-utility
+RUN dnf -y -x ${DNF_EXCLUSIONS} install gnome-screenshot
 RUN dnf -y -x ${DNF_EXCLUSIONS} install gnome-shell
 RUN dnf -y -x ${DNF_EXCLUSIONS} install gnome-software
 RUN dnf -y -x ${DNF_EXCLUSIONS} install gnome-system-monitor
