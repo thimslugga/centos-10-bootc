@@ -1,4 +1,4 @@
-FROM ghcr.io/charles8191/rocky-bootc-monthly/9
+FROM quay.io/almalinuxorg/almalinux-bootc:9
 ARG DNF_EXCLUSIONS="PackageKit,PackageKit-command-not-found,kmod-kvdo,rootfiles,vdo"
 RUN dnf -y -x ${DNF_EXCLUSIONS} install alsa-sof-firmware
 RUN dnf -y -x ${DNF_EXCLUSIONS} install eog
