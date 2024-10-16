@@ -1,1 +1,1 @@
-ostreecontainer --url git.almalinux.org/charles2/obsidian:9
+ostreecontainer --url git.almalinux.org/charles2/calcite:9
