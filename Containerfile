@@ -23,6 +23,7 @@ NetworkManager-wwan \
 wget \
 wireless-regdb \
 wpa_supplicant && \
+dnf clean all && \
 rm -v /etc/profile.d/console-login-helper-messages-profile.sh /usr/share/console-login-helper-messages/profile.sh && \
 systemctl disable sshd.service && \
 systemctl set-default graphical.target
