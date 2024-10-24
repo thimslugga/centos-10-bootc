@@ -22,7 +22,8 @@ NetworkManager-wifi \
 NetworkManager-wwan \
 wget \
 wireless-regdb \
-wpa_supplicant && \
+wpa_supplicant \
+xdg-utils && \
 dnf clean all && \
 rm -v /etc/profile.d/console-login-helper-messages-profile.sh /usr/share/console-login-helper-messages/profile.sh && \
 systemctl disable sshd.service && \
