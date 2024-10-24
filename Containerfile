@@ -20,10 +20,12 @@ man-db \
 nautilus \
 NetworkManager-wifi \
 NetworkManager-wwan \
+unzip \
 wget \
 wireless-regdb \
 wpa_supplicant \
-xdg-utils && \
+xdg-utils \
+zip && \
 dnf clean all && \
 rm -v /etc/profile.d/console-login-helper-messages-profile.sh /usr/share/console-login-helper-messages/profile.sh && \
 systemctl disable sshd.service && \
