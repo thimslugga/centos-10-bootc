@@ -1,0 +1,19 @@
+name: Container
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Login
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | podman login ghcr.io -u "${{ github.actor }}" --password-stdin
+      - name: Build 9
+        run: |
+          podman build -t ghcr.io/charles8191/calcite/9 .
+      - name: Push
+        run: |
+          podman push ghcr.io/charles8191/calcite/9
