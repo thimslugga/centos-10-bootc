@@ -1,1 +1,1 @@
-ostreecontainer --url git.almalinux.org/charles2/calcite:9
+ostreecontainer --url ghcr.io/charles8191/calcite/9

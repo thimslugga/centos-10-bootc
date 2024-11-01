@@ -1,6 +1,9 @@
-# Calcite for AlmaLinux
+# Calcite for Rocky Linux
 
-Calcite is an AlmaLinux bootc-based system with GNOME. It is designed for AlmaLinux and others to easily extend it or even just rebrand it, which is why this project doesn't change branding or settings, and is licensed under the 0BSD.
+Calcite is an Rocky Linux bootc-based system with GNOME. It is designed for Rocky Linux and others to easily extend it or even just rebrand it, which is why this project doesn't change branding or settings, and is licensed under the 0BSD.
+
+> [!IMPORTANT]  
+> We have changed to Rocky Linux, please reinstall.
 
 > [!WARNING]
 > Setting up an internet connection is mandatory, otherwise installation will fail. If you can't set up an internet connection, do not install this software.

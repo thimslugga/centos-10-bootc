@@ -1,4 +1,4 @@
-FROM quay.io/almalinuxorg/almalinux-bootc:9
+FROM docker.io/emanuilov/rocky9-bootc
 RUN dnf -y -x PackageKit,PackageKit-command-not-found,kmod-kvdo,rootfiles,vdo install alsa-sof-firmware \
 eog \
 firefox \
@@ -25,7 +25,8 @@ wget \
 wireless-regdb \
 wpa_supplicant \
 xdg-utils \
-zip && \
+zip \
+@fonts && \
 dnf clean all && \
 rm -v /etc/profile.d/console-login-helper-messages-profile.sh /usr/share/console-login-helper-messages/profile.sh && \
 systemctl disable sshd.service && \
