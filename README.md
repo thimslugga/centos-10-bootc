@@ -15,4 +15,4 @@ Calcite is an Rocky Linux bootc-based system with GNOME. It is designed for Rock
 
 ## Download
 
-[Download the ISO](https://github.com/charles8191/calcite/releases/latest), or use your favorite way to provision a device with bootc.
+[Download the ISO](https://github.com/charles8191/calcite/releases/latest/download/9.iso), or use your favorite way to provision a device with bootc.
