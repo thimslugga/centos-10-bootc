@@ -1,3 +1,6 @@
+# Project halted
+Unfortunately, due to hardware compatibility issues, lack of time, and other reasons I have decided to halt this project. Feel free to fork it and continue this project.
+
 # Calcite for Rocky Linux
 
 Calcite is an Rocky Linux bootc-based system with GNOME. It is designed for Rocky Linux and others to easily extend it or even just rebrand it, which is why this project doesn't change branding or settings, and is licensed under the 0BSD.
