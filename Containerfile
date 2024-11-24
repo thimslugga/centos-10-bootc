@@ -1,4 +1,4 @@
-FROM docker.io/emanuilov/rocky9-bootc
+FROM quay.io/centos-bootc/centos-bootc:stream9
 RUN dnf -y -x PackageKit,PackageKit-command-not-found,kmod-kvdo,rootfiles,vdo install alsa-sof-firmware \
 eog \
 firefox \
