@@ -2,7 +2,7 @@
 
 Calcite is an CentOS Stream bootc-based system with GNOME. It is designed for CentOS and others to easily extend it or even just rebrand it, which is why this project doesn't change branding or settings, and is licensed under the 0BSD.
 
-> ![IMPORTANT]
+> [!IMPORTANT]
 > We have changed to CentOS Stream, please reinstall.
 
 > [!WARNING]
