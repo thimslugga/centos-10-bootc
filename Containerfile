@@ -28,6 +28,7 @@ xdg-utils \
 zip \
 @fonts && \
 dnf clean all && \
+sed -i 's,ExecStart=/usr/bin/bootc update --apply --quiet,ExecStart=/usr/bin/bootc update --quiet,g' /usr/lib/systemd/system/bootc-fetch-apply-updates.service && \
 rm -v /etc/profile.d/console-login-helper-messages-profile.sh /usr/share/console-login-helper-messages/profile.sh && \
 systemctl disable sshd.service && \
 systemctl set-default graphical.target
