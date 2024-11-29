@@ -1,4 +1,4 @@
-FROM quay.io/centos-bootc/centos-bootc:stream9
+FROM quay.io/almalinuxorg/almalinux-bootc:9
 RUN dnf -y -x PackageKit,PackageKit-command-not-found,kmod-kvdo,rootfiles,vdo install alsa-sof-firmware \
 eog \
 firefox \
