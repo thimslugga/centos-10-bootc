@@ -18,4 +18,4 @@ jobs:
           podman build -t ghcr.io/charles8191/calcite/9 .
       - name: Push
         run: |
-          podman push ghcr.io/charles8191/calcite/9
+          podman push ghcr.io/charles8191/calcite/9 --compression-format=zstd:chunked
