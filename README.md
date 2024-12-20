@@ -3,7 +3,7 @@
 Calcite is an AlmaLinux bootc-based system with GNOME. It is designed for AlmaLinux and others to easily extend it or even just rebrand it, which is why this project doesn't change branding or settings, and is licensed under the ISC license.
 
 > [!IMPORTANT]
-> We have changed to AlmaLinux, please reinstall.
+> If you have a Calcite installation or derived image from before December 22nd, 2024, please change the source to `ghcr.io/calciteauthors/calcite/9` as soon as possible.
 
 > [!WARNING]
 > Setting up an internet connection is mandatory, otherwise installation will fail. If you can't set up an internet connection, do not install this software.
@@ -14,4 +14,4 @@ Calcite is an AlmaLinux bootc-based system with GNOME. It is designed for AlmaLi
 
 ## Download
 
-[Download the ISO](https://github.com/charles8191/calcite/releases/latest/download/9.iso), or use your favorite way to provision a device with bootc.
+[Download the ISO](https://github.com/CalciteAuthors/calcite/releases/latest/download/9.iso), or use your favorite way to provision a device with bootc.
