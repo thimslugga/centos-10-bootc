@@ -1,6 +1,6 @@
 # Calcite for AlmaLinux
 
-Calcite is an AlmaLinux bootc-based system with GNOME. It is designed for AlmaLinux and others to easily extend it or even just rebrand it, which is why this project doesn't change branding or settings, and is licensed under a permissive custom license.
+Calcite is an AlmaLinux bootc-based system with GNOME. It is designed for AlmaLinux and others to easily extend it or even just rebrand it, which is why this project doesn't change branding or settings, and is licensed under the ISC license.
 
 > [!IMPORTANT]
 > We have changed to AlmaLinux, please reinstall.
