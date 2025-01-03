@@ -14,8 +14,6 @@ jobs:
       - name: Login
         run: echo "${{ secrets.GITHUB_TOKEN }}" | podman login ghcr.io -u "${{ github.actor }}" --password-stdin
       - name: Build 9
-        run: |
-          podman build -t ghcr.io/calciteauthors/calcite/9 .
+        run: podman build -t ghcr.io/calciteauthors/calcite/9 .
       - name: Push
-        run: |
-          podman push ghcr.io/calciteauthors/calcite/9 --compression-format=zstd:chunked
+        run: podman push ghcr.io/calciteauthors/calcite/9 --compression-format=zstd:chunked
