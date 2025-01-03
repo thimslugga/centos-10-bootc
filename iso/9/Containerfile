@@ -1,7 +1,6 @@
 FROM ghcr.io/almalinux/almalinux:10-kitten
 
-COPY files/ks.ks /ks.ks
-COPY files/entrypoint.sh /entrypoint.sh
+COPY files/* /
 RUN chmod +x /entrypoint.sh
 RUN dnf install lorax util-linux -y
 ENTRYPOINT ["/entrypoint.sh"]
