@@ -2,8 +2,9 @@ FROM quay.io/centos-bootc/centos-bootc:stream10
 RUN set -x && \
     dnf install epel-release -y && \
     dnf config-manager --set-enabled crb && \
-    dnf -y -x centos-backgrounds,PackageKit,PackageKit-command-not-found,kmod-kvdo,rootfiles,vdo install \
+    dnf -y -x PackageKit,PackageKit-command-not-found,kmod-kvdo,rootfiles,vdo install \
       alsa-sof-firmware \
+      centos-backgrounds \
       flatpak \
       gdm \
       git \
