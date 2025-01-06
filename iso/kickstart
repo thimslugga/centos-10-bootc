@@ -1,1 +1,1 @@
-ostreecontainer --url ghcr.io/calciteauthors/calcite/10
+ostreecontainer --url ghcr.io/calciteauthors/calcite/10:latest

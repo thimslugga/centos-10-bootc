@@ -16,4 +16,4 @@ jobs:
       - name: Build
         run: podman build -t ghcr.io/calciteauthors/calcite/10 .
       - name: Push
-        run: podman push ghcr.io/calciteauthors/calcite/10 --compression-format=zstd:chunked
+        run: podman push ghcr.io/calciteauthors/calcite/10
