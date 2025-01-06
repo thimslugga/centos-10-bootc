@@ -29,3 +29,5 @@ Run this in a terminal emulator:
 ```bash
 sudo bootc upgrade
 ```
+
+Note that it is not supported by us to upgrade between major versions, like 9 ➛ 10 or 10 ➛ 11.
