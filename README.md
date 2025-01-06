@@ -13,7 +13,7 @@ Calcite is a CentOS Stream bootc-based system with GNOME. It is designed as a us
 
 ### Why is there no web browser?
 
-Open Software and download your favorite web browser.
+Open the Software app and download your favorite web browser.
 
 ### What's the difference between this and HeliumOS?
 
