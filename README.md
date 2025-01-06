@@ -2,6 +2,9 @@
 
 Calcite is a CentOS Stream bootc-based system with GNOME. It is designed as a usable desktop base image and can even just be rebranded with no other changes.
 
+> [!IMPORTANT]
+> The `9` branch is no longer maintained. If you have it installed, please reinstall your OS.
+
 > [!WARNING]
 > Setting up an internet connection is mandatory, otherwise installation will fail. If you can't set up an internet connection, do not install this software.
 
