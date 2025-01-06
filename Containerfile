@@ -4,6 +4,7 @@ RUN set -x && \
     dnf config-manager --set-enabled crb && \
     dnf -y -x PackageKit,PackageKit-command-not-found,kmod-kvdo,rootfiles,vdo install \
       alsa-sof-firmware \
+      centos-backgrounds \
       flatpak \
       gdm \
       git \
@@ -15,6 +16,7 @@ RUN set -x && \
       gnome-text-editor \
       gnome-tweaks \
       grubby \
+      loupe \
       man \
       man-db \
       nautilus \
