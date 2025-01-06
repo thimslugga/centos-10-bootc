@@ -1,6 +1,6 @@
-FROM ghcr.io/almalinux/almalinux:10-kitten
+FROM quay.io/centos/centos:stream10
 
-COPY files/* /
+COPY entrypoint.sh kickstart /
 RUN chmod +x /entrypoint.sh
 RUN dnf install lorax util-linux -y
 ENTRYPOINT ["/entrypoint.sh"]
