@@ -20,7 +20,7 @@ Open the Software app and download your favorite web browser.
 
 ### What's the difference between this and HeliumOS?
 
-Different goals. Both can be used for the same purposes but we explicitly make it easy to make derived images.
+Both can be used for the same purposes but we prefer to keep our tweaks minimal, and we do not change branding.
 
 ### How do you upgrade this?
 
