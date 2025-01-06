@@ -7,7 +7,7 @@ Calcite is a CentOS Stream bootc-based system with GNOME. It is designed as a us
 
 ## Download
 
-[Download the ISO](https://github.com/CalciteAuthors/calcite/releases/latest/download/calcite-10.iso), or use your favorite way to provision a device with bootc.
+[Download the ISO](https://github.com/CalciteAuthors/calcite/releases/download/continuous/calcite-10.iso), or use your favorite way to provision a device with bootc.
 
 ## FAQ
 
