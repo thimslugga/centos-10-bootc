@@ -1,6 +1,6 @@
 # Calcite
 
-<img src="calcite.png" width="30%" height="30%" />
+![Screenshot of the OS](calcite.png)
 
 Calcite is a CentOS Stream bootc-based system with GNOME. It is designed as a usable desktop base image and can even just be rebranded with no other changes.
 
