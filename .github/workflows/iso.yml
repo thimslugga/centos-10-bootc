@@ -18,7 +18,7 @@ jobs:
       - name: Download Calcite
         run: |
           mkdir container
-          skopeo copy docker://ghcr.io/charles8191/calcite/10:latest oci:container
+          skopeo copy docker://ghcr.io/calciteauthors/calcite/10:latest oci:container
       - name: Build
         run: |
           podman build -t localhost/iso iso
