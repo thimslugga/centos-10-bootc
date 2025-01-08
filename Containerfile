@@ -36,4 +36,5 @@ RUN set -x && \
     systemctl disable sshd.service && \
     mkdir -p /etc/flatpak/remotes.d && \
     curl -o /etc/flatpak/remotes.d/flathub.flatpakrepo https://dl.flathub.org/repo/flathub.flatpakrepo && \
-    systemctl set-default graphical.target
+    systemctl set-default graphical.target && \
+    bootc container lint
