@@ -29,7 +29,7 @@ sudo bootc upgrade
 
 Note that it is not supported by us to upgrade between major versions, like 9 ➛ 10.
 
-## Known issues
+## Erratum
 
 - A small volume may be shown in Files. This is a loop device critical for the system and we can't hide it.
 - Secure Boot may not work. This is caused by a pending [shim review](https://github.com/rhboot/shim-review/issues/454) upstream. Shortly after it is approved Secure Boot will start working.
