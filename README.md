@@ -1,5 +1,11 @@
 # Calcite
 
+**This project has had severe structural problems, takes up all of my time maintaining this, and for personal reasons I can't maintain this project anymore.**
+**If you have a Calcite system, please run this to switch to a similar project:**
+```bash
+sudo bootc switch ghcr.io/centos-workstation/main:stream10
+```
+
 ![Screenshot of the OS](calcite.png)
 
 Calcite is a CentOS Stream bootc-based system with GNOME. It is designed as a usable desktop base image and can even just be rebranded with no other changes.
