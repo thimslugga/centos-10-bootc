@@ -1,1 +1,1 @@
-ostreecontainer --url ghcr.io/calciteauthors/calcite/10:latest
+ostreecontainer --url=/run/install/repo/container --transport=oci --no-signature-verification

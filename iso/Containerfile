@@ -1,6 +1,7 @@
 FROM quay.io/centos/centos:stream10
 
-COPY entrypoint.sh kickstart /
-RUN chmod +x /entrypoint.sh
 RUN dnf install lorax util-linux -y
+COPY kickstart /
+COPY entrypoint.sh /
+RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
