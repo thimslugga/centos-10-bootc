@@ -1,5 +1,5 @@
 ostreecontainer --url=/run/install/repo/container --transport=oci --no-signature-verification
 
-%post
+%post --erroronfail
 bootc switch --mutate-in-place --transport registry ghcr.io/calciteauthors/calcite/10:latest
 %end
