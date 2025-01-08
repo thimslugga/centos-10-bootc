@@ -1,13 +1,26 @@
-FROM quay.io/centos-bootc/centos-bootc:stream10
-RUN set -x && \
-    dnf install epel-release -y && \
+# syntax=docker/dockerfile:1
+ARG MAJOR_VERSION="${MAJOR_VERSION:-stream10}"
+FROM quay.io/centos-bootc/centos-bootc:$MAJOR_VERSION
+
+RUN \
     dnf config-manager --set-enabled crb && \
+    dnf install epel-release -y && \
     dnf -y -x PackageKit,PackageKit-command-not-found,kmod-kvdo,rootfiles,vdo install \
-      alsa-sof-firmware \
+      grubby \
       centos-backgrounds \
+      git \
+      wget \
+      unzip \
+      zip \
+      man \
+      man-db \
+      wireless-regdb \
+      wpa_supplicant \
+      NetworkManager-wifi \
+      NetworkManager-wwan \
+      alsa-sof-firmware \
       flatpak \
       gdm \
-      git \
       gnome-calculator \
       gnome-disk-utility \
       gnome-shell \
@@ -15,25 +28,14 @@ RUN set -x && \
       gnome-system-monitor \
       gnome-text-editor \
       gnome-tweaks \
-      grubby \
       loupe \
-      man \
-      man-db \
       nautilus \
-      NetworkManager-wifi \
-      NetworkManager-wwan \
-      ptyxis \
-      unzip \
-      wget \
-      wireless-regdb \
-      wpa_supplicant \
       xdg-utils \
-      zip \
+      ptyxis \
       @fonts && \
     dnf remove console-login-helper-messages\* -y && \
     dnf clean all && \
     sed -i 's,ExecStart=/usr/bin/bootc update --apply --quiet,ExecStart=/usr/bin/bootc update --quiet,g' /usr/lib/systemd/system/bootc-fetch-apply-updates.service && \
-    systemctl disable sshd.service && \
     mkdir -p /etc/flatpak/remotes.d && \
     curl -o /etc/flatpak/remotes.d/flathub.flatpakrepo https://dl.flathub.org/repo/flathub.flatpakrepo && \
     systemctl set-default graphical.target && \
